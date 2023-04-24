@@ -27,7 +27,8 @@ In the first scenario, you simply return the current amount of change that you c
 The reason for this is that, if you're in the second scenario, you can create all of the values of change that you can currently create plus the value of the coin that you just considered. If you're given coins `[1, 2]`, then you can make `1, 2, 3` cents. So if you add a coin of value `4`, then you can make `4 + 1` cents, `4 + 2` cents, and `4 + 3` cents. Thus, you can make up to 7 cents.
 
 |  | Complexity |
-| ----------- | ----------- |
+| --- | --- |
 | Time | O(nlog(n)) |
 | Space | O(1) |
+
 where n is the number of coins.
